@@ -1,0 +1,156 @@
+"use client";
+
+import type { ReactNode } from "react";
+import { useRef } from "react";
+import { Arrow, Panel, Wrap } from "./ui/primitives";
+import { MockAds, MockBrand, MockDelivery, MockSite, MockSlides } from "./ui/mocks";
+import { WHATSAPP_URL, href } from "@/content/contato";
+
+/**
+ * Secção 4 · O que entregamos.
+ *
+ * Coluna fixa à esquerda com o cabeçalho da secção e o CTA, lista de seis
+ * serviços à direita. Cada linha tem numeração, título, subtítulo, lista de
+ * itens em monoespaçada e uma miniatura ilustrativa.
+ */
+
+const SERVICOS: {
+  n: string;
+  titulo: string;
+  sub: string;
+  itens: string[];
+  viz: ReactNode;
+}[] = [
+  {
+    n: "01",
+    titulo: "Sites e landing pages",
+    sub: "A página que segura o lead que o anúncio trouxe.",
+    itens: ["Página de vendas ou captura", "Texto e design juntos", "Mobile desenhado"],
+    viz: <MockSite />,
+  },
+  {
+    n: "02",
+    titulo: "Identidade visual",
+    sub: "Uma marca que continua a mesma no lançamento seguinte.",
+    itens: ["Logo e versões", "Paleta com códigos", "Tipografia", "Manual de uso"],
+    viz: <MockBrand />,
+  },
+  {
+    n: "03",
+    titulo: "Criativos para tráfego pago",
+    sub: "O anúncio que já chega parecido com a página de destino.",
+    itens: ["Feed e stories", "Variações para teste", "Arquivos editáveis"],
+    viz: <MockAds />,
+  },
+  {
+    n: "04",
+    titulo: "Apresentações e materiais de lançamento",
+    sub: "A campanha inteira com a mesma cara, até o último slide.",
+    itens: ["Slides de aula e webinário", "Capas e thumbnails", "Cabeçalhos de e-mail"],
+    viz: <MockSlides />,
+  },
+  {
+    n: "05",
+    titulo: "Entrega editável na sua mão",
+    sub: "O projeto continua funcionando depois que a gente sai.",
+    itens: ["Arquivos abertos", "Manual de uso", "Call de passagem"],
+    viz: <MockDelivery />,
+  },
+];
+
+function Card({ s }: { s: (typeof SERVICOS)[number] }) {
+  const ref = useRef<HTMLElement>(null);
+
+  function onMove(e: React.MouseEvent<HTMLElement>) {
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    el.style.setProperty("--mx", `${e.clientX - r.left}px`);
+    el.style.setProperty("--my", `${e.clientY - r.top}px`);
+  }
+
+  return (
+    <article
+      ref={ref}
+      onMouseMove={onMove}
+      className="group relative flex flex-col overflow-hidden rounded-[24px] border border-line bg-panel p-6 transition-colors duration-300 hover:border-ink/20"
+    >
+      {/* realce que segue o cursor */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        style={{
+          background:
+            "radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(23,23,23,0.05), transparent 70%)",
+        }}
+      />
+
+      <span className="relative font-mono text-sm text-muted">/ {s.n}</span>
+
+      <h3 className="relative mt-3 text-xl font-medium leading-snug tracking-[-0.02em]">
+        {s.titulo}
+      </h3>
+      <p className="relative mt-1 text-base text-muted">{s.sub}</p>
+
+      {/* itens empilhados, um por linha */}
+      <ul className="relative mt-5 border-t border-line">
+        {s.itens.map((it) => (
+          <li
+            key={it}
+            className="border-b border-line py-2.5 font-mono text-xs uppercase tracking-[0.04em] text-muted"
+          >
+            {it}
+          </li>
+        ))}
+      </ul>
+
+      {/* miniatura por baixo de tudo */}
+      <div className="relative mt-6 h-[132px]">{s.viz}</div>
+    </article>
+  );
+}
+
+export default function Services() {
+  return (
+    <Panel id="entregamos" className="px-3 py-12 lg:py-25">
+      <Wrap>
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          {/* coluna fixa */}
+          <aside className="lg:sticky lg:top-24 lg:self-start">
+            <div className="mb-4 flex items-center gap-3">
+              <span className="font-mono text-sm text-muted">(04)</span>
+              <span className="font-mono text-sm uppercase tracking-[0.02em] text-ink">
+                O que entregamos
+              </span>
+              <span className="h-px flex-1 bg-line" aria-hidden="true" />
+            </div>
+
+            <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
+              Tudo o que o seu lançamento precisa, saindo do mesmo lugar.
+            </h2>
+
+            <p className="mt-4 max-w-lg text-lg text-muted">
+              Cinco frentes que podem vir juntas ou separadas, na ordem que o seu momento pede. O que
+              não muda é que tudo sai com a mesma cara.
+            </p>
+
+            <a
+              href={href(WHATSAPP_URL, "#duvidas")}
+              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-ink-btn px-6 py-[14px] font-mono text-sm uppercase leading-none tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-hover"
+            >
+              Chamar no WhatsApp
+              <Arrow />
+            </a>
+          </aside>
+
+          {/* lista de cards, um por linha */}
+          <div className="grid gap-4">
+            {SERVICOS.map((s) => (
+              <Card key={s.n} s={s} />
+            ))}
+          </div>
+        </div>
+      </Wrap>
+    </Panel>
+  );
+}
