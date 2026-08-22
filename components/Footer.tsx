@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useRef, type ReactNode } from "react";
 import { Arrow, Asterisk } from "./ui/primitives";
-import MagicText from "./ui/MagicText";
 import { WHATSAPP_URL, href } from "@/content/contato";
 
 /**
@@ -188,19 +187,12 @@ export default function Footer() {
 
         {/* ---- chamada final ---- */}
         <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-4 py-12 text-center sm:px-7">
-          <p
-            className="footer-rise mb-5 inline-flex items-center gap-2 font-mono text-sm uppercase tracking-[0.02em] text-neutral-400"
-            style={{ "--atraso": 0.2, "--rise": "24px" } as React.CSSProperties}
-          >
-            <Asterisk className="size-4" />
-            Sem formulário e sem call obrigatória
-          </p>
-
           <h2
-            className="footer-rise footer-title-glow mb-9 max-w-[18ch] text-3xl font-medium leading-[1.05] tracking-[-0.03em] sm:text-4xl lg:text-6xl"
+            className="footer-rise mb-9 text-3xl font-medium leading-[1.05] tracking-[-0.03em] text-white sm:text-4xl lg:text-5xl"
             style={{ "--atraso": 0.35 } as React.CSSProperties}
           >
-            <MagicText>O próximo lançamento não precisa parecer com o anterior.</MagicText>
+            <span className="block sm:whitespace-nowrap">O próximo lançamento não precisa</span>
+            <span className="block sm:whitespace-nowrap">parecer com o anterior.</span>
           </h2>
 
           <div
@@ -210,7 +202,7 @@ export default function Footer() {
             <Magnetico>
               <a
                 href={href(WHATSAPP_URL, "#duvidas")}
-                className="footer-pill group inline-flex items-center gap-2 rounded-full px-9 py-4 font-mono text-sm uppercase leading-none tracking-[0.04em] text-white"
+                className="footer-pill footer-pill--whatsapp group inline-flex items-center gap-2 rounded-full px-9 py-4 font-mono text-sm uppercase leading-none tracking-[0.04em]"
               >
                 Chamar no WhatsApp
                 <Arrow />

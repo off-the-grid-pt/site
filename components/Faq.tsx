@@ -42,7 +42,7 @@ export default function Faq() {
       <Wrap>
         <div className="flex flex-col justify-between gap-10 lg:flex-row xl:gap-16">
           <div className="xl:w-4/12">
-            <Eyebrow>Dúvidas</Eyebrow>
+            <Eyebrow icon={<span>(07)</span>}>Dúvidas</Eyebrow>
             <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
               As perguntas que aparecem toda semana no WhatsApp
             </h2>

@@ -38,7 +38,7 @@ function Pill({
 
 function Frame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="h-full w-full rounded-[14px] border border-line bg-canvas p-3">{children}</div>
+    <div className="otg-mock-frame h-full w-full overflow-hidden rounded-[14px] border border-line bg-canvas p-3">{children}</div>
   );
 }
 
@@ -46,6 +46,7 @@ function Frame({ children }: { children: React.ReactNode }) {
 export function MockSite() {
   return (
     <Frame>
+      <span className="otg-mock-cursor" />
       <div className="mb-2.5 flex items-center gap-2">
         <span className="flex gap-1">
           {[0, 1, 2].map((i) => (
@@ -65,7 +66,7 @@ export function MockSite() {
         <div className="flex-1 space-y-2">
           <div className="h-8 rounded-md bg-soft-purple" />
           <div className="flex items-center gap-1.5">
-            <Pill tone="ink">comprar</Pill>
+            <span className="otg-mock-site-cta"><Pill tone="ink">comprar</Pill></span>
             <Pill>ver mais</Pill>
           </div>
         </div>
@@ -79,7 +80,7 @@ export function MockBrand() {
   return (
     <Frame>
       <div className="mb-3 flex items-center gap-2">
-        <span className="size-7 rounded-md bg-ink" />
+        <span className="otg-mock-brand-mark size-7 rounded-md bg-ink" />
         <div className="flex-1 space-y-1.5">
           <Bar w="70%" h={5} />
           <Bar w="45%" h={5} dim />
@@ -88,7 +89,7 @@ export function MockBrand() {
       </div>
       <div className="flex items-center gap-1.5">
         {["bg-ink", "bg-soft-green", "bg-soft-purple", "bg-soft-pink"].map((c) => (
-          <span key={c} className={`size-6 rounded-md ${c}`} />
+          <span key={c} className={`otg-mock-swatch size-6 rounded-md ${c}`} />
         ))}
         <Pill tone="ghost">+ cor</Pill>
       </div>
@@ -113,11 +114,11 @@ export function MockAds() {
         ))}
       </div>
       <div className="relative mb-2 h-1.5 rounded-full bg-surface">
-        <span className="absolute inset-y-0 left-0 w-2/3 rounded-full bg-ink" />
-        <span className="absolute -top-1 left-2/3 size-3.5 rounded-full border-2 border-panel bg-ink" />
+        <span className="otg-mock-ad-progress absolute inset-y-0 left-0 rounded-full bg-ink" />
+        <span className="otg-mock-ad-knob absolute -top-1 size-3.5 rounded-full border-2 border-panel bg-ink" />
       </div>
       <div className="flex justify-end">
-        <Pill tone="ink">aprovado</Pill>
+        <span className="otg-mock-approved"><Pill tone="ink">aprovado</Pill></span>
       </div>
     </Frame>
   );
@@ -170,7 +171,7 @@ export function MockSlides() {
           {[40, 65, 30, 85, 55].map((h, i) => (
             <i
               key={i}
-              className={`flex-1 rounded-sm ${i === 3 ? "bg-ink" : "bg-line"}`}
+              className={`otg-mock-chart-bar flex-1 rounded-sm ${i === 3 ? "bg-ink" : "bg-line"}`}
               style={{ height: `${h}%` }}
             />
           ))}
@@ -191,12 +192,12 @@ export function MockDelivery() {
       </div>
       <div className="mb-2.5 flex items-center gap-2">
         <span className="relative h-1.5 flex-1 rounded-full bg-surface">
-          <b className="absolute inset-y-0 left-0 block w-full rounded-full bg-ink" />
+          <b className="otg-mock-delivery-progress absolute inset-y-0 left-0 block rounded-full bg-ink" />
         </span>
         <Pill tone="ink">ok</Pill>
       </div>
       <p className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.04em] text-muted">
-        <span className="inline-flex size-3.5 items-center justify-center rounded-full bg-ink text-[8px] text-white">
+        <span className="otg-mock-delivery-check inline-flex size-3.5 items-center justify-center rounded-full bg-ink text-[8px] text-white">
           ✓
         </span>
         tudo na sua mão

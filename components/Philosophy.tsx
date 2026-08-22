@@ -46,12 +46,12 @@ export default function Philosophy() {
   return (
     <Panel id="filosofia" className="px-3 py-12 lg:py-25">
       <Wrap>
-        <div className="mx-auto mb-16 max-w-3xl text-center lg:mb-24">
+        <div className="mx-auto mb-16 max-w-6xl text-center lg:mb-24">
           <div className="reveal flex justify-center">
-            <Eyebrow>Uma nova forma de construir</Eyebrow>
+            <Eyebrow icon={<span>(03)</span>}>Uma nova forma de construir</Eyebrow>
           </div>
 
-          <h2 className="reveal text-3xl font-medium leading-tight tracking-[-0.04em] text-muted sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] text-muted sm:text-4xl lg:whitespace-nowrap lg:text-[clamp(2.25rem,3.6vw,3rem)]">
             Design para infoprodutor{" "}
             <span className="text-ink">não é peça avulsa.</span>
           </h2>

@@ -125,8 +125,9 @@ export default function Services() {
               <span className="h-px flex-1 bg-line" aria-hidden="true" />
             </div>
 
-            <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              Tudo o que o seu lançamento precisa, saindo do mesmo lugar.
+            <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-[clamp(2rem,3vw,2.5rem)]">
+              <span className="block lg:whitespace-nowrap">Tudo o que o seu lançamento</span>
+              <span className="block lg:whitespace-nowrap">precisa, saindo do mesmo lugar.</span>
             </h2>
 
             <p className="mt-4 max-w-lg text-lg text-muted">

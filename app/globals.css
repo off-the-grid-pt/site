@@ -597,6 +597,100 @@
     transform: translateX(-50%);
   }
 }
+
+/* Movimento dos mockups da secção "O que entregamos". */
+.otg-mock-frame { position: relative; }
+.otg-mock-cursor {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 17px;
+  background: #fff;
+  border: 1px solid #171717;
+  clip-path: polygon(0 0, 100% 62%, 58% 68%, 38% 100%);
+  animation: otg-mock-cursor 3.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.otg-mock-site-cta { animation: otg-mock-pulse 3.4s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+.otg-mock-site-cta > span { background: #171717; color: #fff; }
+.otg-mock-brand-mark { animation: otg-mock-spin 8s linear infinite; }
+.otg-mock-swatch { animation: otg-mock-ring 3.6s ease-in-out infinite; }
+.otg-mock-swatch:nth-child(2) { animation-delay: 350ms; }
+.otg-mock-swatch:nth-child(3) { animation-delay: 700ms; }
+.otg-mock-swatch:nth-child(4) { animation-delay: 1050ms; }
+.otg-mock-ad-progress { animation: otg-mock-ad-fill 3.6s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+.otg-mock-ad-knob { animation: otg-mock-ad-knob 3.6s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+.otg-mock-approved { animation: otg-mock-approved 3.6s ease-in-out infinite; }
+.otg-mock-chart-bar { transform-origin: bottom; animation: otg-mock-bars 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+.otg-mock-chart-bar:nth-child(2) { animation-delay: 120ms; }
+.otg-mock-chart-bar:nth-child(3) { animation-delay: 240ms; }
+.otg-mock-chart-bar:nth-child(4) { animation-delay: 360ms; }
+.otg-mock-chart-bar:nth-child(5) { animation-delay: 480ms; }
+.otg-mock-delivery-progress { animation: otg-mock-delivery 3.4s cubic-bezier(0.22, 1, 0.36, 1) infinite; }
+.otg-mock-delivery-check { animation: otg-mock-check 3.4s ease-in-out infinite; }
+
+@keyframes otg-mock-cursor {
+  0% { left: 18%; top: 14%; transform: scale(1); opacity: 0; }
+  18% { opacity: 1; }
+  55%, 64% { left: 43%; top: 66%; transform: scale(1); opacity: 1; }
+  60% { left: 43%; top: 66%; transform: scale(.78); opacity: 1; }
+  100% { left: 43%; top: 66%; transform: scale(1); opacity: 0; }
+}
+@keyframes otg-mock-pulse {
+  0%, 55%, 65%, 100% { filter: drop-shadow(0 0 0 rgba(123,0,255,0)); transform: scale(1); }
+  60% { filter: drop-shadow(0 4px 8px rgba(123,0,255,.38)); transform: scale(.96); }
+}
+@keyframes otg-mock-spin { to { transform: rotate(360deg); } }
+@keyframes otg-mock-ring {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  12% { box-shadow: 0 0 0 3px rgba(23,23,23,.16); }
+  26% { box-shadow: 0 0 0 0 transparent; }
+}
+@keyframes otg-mock-ad-fill {
+  0% { width: 0; opacity: 0; }
+  14% { opacity: 1; }
+  60%, 70% { width: 66.666%; opacity: 1; }
+  100% { width: 66.666%; opacity: 0; }
+}
+@keyframes otg-mock-ad-knob {
+  0% { left: 0; opacity: 0; }
+  14% { opacity: 1; }
+  60%, 70% { left: calc(66.666% - 7px); opacity: 1; }
+  100% { left: calc(66.666% - 7px); opacity: 0; }
+}
+@keyframes otg-mock-approved {
+  0%, 66%, 82%, 100% { transform: scale(1); }
+  74% { transform: scale(1.09); }
+}
+@keyframes otg-mock-bars {
+  0%, 100% { transform: scaleY(.28); }
+  50% { transform: scaleY(1); }
+}
+@keyframes otg-mock-delivery {
+  0% { width: 0; }
+  60%, 100% { width: 100%; }
+}
+@keyframes otg-mock-check {
+  0%, 56%, 100% { opacity: .2; transform: scale(.86); }
+  68%, 92% { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .otg-mock-cursor { display: none; }
+  .otg-mock-site-cta,
+  .otg-mock-brand-mark,
+  .otg-mock-swatch,
+  .otg-mock-ad-progress,
+  .otg-mock-ad-knob,
+  .otg-mock-approved,
+  .otg-mock-chart-bar,
+  .otg-mock-delivery-progress,
+  .otg-mock-delivery-check { animation: none; }
+  .otg-mock-ad-progress { width: 66.666%; }
+  .otg-mock-ad-knob { left: calc(66.666% - 7px); }
+  .otg-mock-delivery-progress { width: 100%; }
+}
 .animate-marquee {
   animation: marquee 40s linear infinite;
 }
@@ -759,6 +853,18 @@
   box-shadow:
     0 20px 40px -10px rgba(0, 0, 0, 0.7),
     inset 0 1px 1px color-mix(in oklab, #ffffff 22%, transparent);
+}
+.footer-pill.footer-pill--whatsapp {
+  border-color: #fff;
+  background: #fff;
+  color: #171717;
+  box-shadow: 0 14px 34px -12px rgba(255, 255, 255, 0.42);
+}
+.footer-pill.footer-pill--whatsapp:hover {
+  border-color: #e5e5e5;
+  background: #e5e5e5;
+  color: #171717;
+  box-shadow: 0 18px 42px -10px rgba(255, 255, 255, 0.52);
 }
 
 /* invólucro magnético: é este que recebe o transform, nunca o link */

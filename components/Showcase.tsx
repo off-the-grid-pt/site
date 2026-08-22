@@ -20,7 +20,7 @@ export default function Showcase() {
       <Wrap>
         <div className="mx-auto mb-10 max-w-lg text-center sm:mb-16">
           <div className="flex justify-center">
-            <Eyebrow>Projetos em destaque</Eyebrow>
+            <Eyebrow icon={<span>(05)</span>}>Projetos em destaque</Eyebrow>
           </div>
           <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
             Trabalho entregue, não mockup.

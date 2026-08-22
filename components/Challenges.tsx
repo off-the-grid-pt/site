@@ -94,12 +94,14 @@ export default function Challenges() {
     <Panel id="desafios" className="px-3 py-12 lg:py-25">
       <Wrap>
         <div className="reveal">
-          <Eyebrow>Os desafios do mercado</Eyebrow>
+          <Eyebrow icon={<span>(02)</span>}>Os desafios do mercado</Eyebrow>
         </div>
 
         <div className="mb-16 grid gap-8 lg:grid-cols-[45%_55%] lg:gap-12">
-          <h2 className="reveal max-w-[15ch] text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-            Todo mundo do seu nicho comprou o mesmo template.
+          <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-[clamp(2.25rem,3.3vw,3rem)]">
+            <span className="block lg:whitespace-nowrap">O padrão do seu mercado</span>
+            <span className="block lg:whitespace-nowrap">não precisa ser o padrão</span>
+            <span className="block lg:whitespace-nowrap">da sua marca</span>
           </h2>
 
           <div className="reveal space-y-4 text-muted">

@@ -10,7 +10,7 @@ export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const slowVideo = () => {
-    if (videoRef.current) videoRef.current.playbackRate = 0.25;
+    if (videoRef.current) videoRef.current.playbackRate = 0.2;
   };
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Hero() {
       >
         <video
           ref={videoRef}
-          className="hero-frame-image absolute inset-0 size-full object-contain"
+          className="hero-frame-image absolute inset-0 size-full object-cover"
           src="/background.mp4"
           autoPlay
           muted
