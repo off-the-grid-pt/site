@@ -30,7 +30,7 @@ export default function Faq() {
   const [aberta, setAberta] = useState<number | null>(null);
 
   return (
-    <Panel id="duvidas" className="flex !min-h-[500px] items-center px-3 py-12 lg:py-16">
+    <Panel id="duvidas" className="flex !min-h-[600px] items-center px-3 py-12 lg:py-16">
       <Wrap>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div>
