@@ -4,25 +4,25 @@ const ETAPAS = [
   {
     numero: "01",
     titulo: "Briefing",
-    descricao: "Entendemos seu negócio, oferta, público, referências e os objetivos do projeto.",
+    descricao: "Entendemos seu negócio, sua oferta, seu público, suas referências e os objetivos do projeto. Essa etapa nos dá o contexto necessário para tomar decisões mais precisas e construir algo realmente alinhado ao que você precisa.",
     color: "#060E0F",
   },
   {
     numero: "02",
     titulo: "Criação",
-    descricao: "Definimos conceito, direção visual e desenvolvemos as páginas, identidade e materiais previstos no projeto.",
+    descricao: "Transformamos tudo o que entendemos em conceito, direção visual e design. A partir daí, desenvolvemos cada peça do projeto para que todo o lançamento tenha uma linguagem visual forte, consistente e reconhecível.",
     color: "#1E252C",
   },
   {
     numero: "03",
     titulo: "Entrega",
-    descricao: "Apresentamos o projeto, refinamos os últimos detalhes e entregamos tudo organizado e pronto para ir ao ar.",
+    descricao: "Apresentamos o projeto, explicamos as principais decisões e refinamos os últimos detalhes a partir do seu feedback. Depois, organizamos todos os materiais e deixamos tudo preparado para ser implementado e ir ao ar.",
     color: "#363D43",
   },
   {
     numero: "04",
     titulo: "Suporte",
-    descricao: "Prestamos suporte após a entrega para garantir que tudo seja implementado corretamente e que o seu lançamento aconteça conforme o planejado.",
+    descricao: "Prestamos suporte após a entrega para acompanhar a implementação, solucionar eventuais ajustes e garantir que tudo seja aplicado corretamente para que o seu lançamento aconteça conforme o planejado.",
     color: "#4C5357",
   },
 ] as const;

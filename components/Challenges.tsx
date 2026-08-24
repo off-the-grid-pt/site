@@ -97,13 +97,13 @@ export default function Challenges() {
           <Eyebrow icon={<span>(02)</span>}>Os desafios do mercado</Eyebrow>
         </div>
 
-        <div className="mb-16 grid gap-8 lg:grid-cols-[45%_55%] lg:gap-12">
+        <div className="mb-16 grid items-start gap-8 lg:grid-cols-[45%_55%] lg:gap-12">
           <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
             <span className="block lg:whitespace-nowrap">O digital ficou cheio de marcas</span>
             <span className="block lg:whitespace-nowrap">diferentes com a mesma cara</span>
           </h2>
 
-          <div className="reveal flex justify-end text-right text-muted">
+          <div className="reveal flex justify-end text-right text-muted lg:pt-2">
             <p className="max-w-[52ch]">
               Mesmas referências. Mesmas landing pages. Mesmos criativos. Seguir uma fórmula pronta
               é o caminho mais fácil para construir uma marca sem identidade. E o problema vai muito
