@@ -105,8 +105,9 @@ export default function Challenges() {
 
           <div className="reveal flex justify-end text-right text-muted">
             <p className="max-w-[52ch]">
-              Mesmas referências. Mesmas páginas. Mesmos criativos. Quando sua marca se parece com
-              todas as outras, o problema vai muito além do design.
+              Mesmas referências. Mesmas landing pages. Mesmos criativos. Seguir uma fórmula pronta
+              é o caminho mais fácil para construir uma marca sem identidade. E o problema vai muito
+              além do design.
             </p>
           </div>
         </div>
