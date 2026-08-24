@@ -5,32 +5,24 @@ import { Eyebrow, Panel, Wrap } from "./ui/primitives";
 
 const PERGUNTAS = [
   {
+    q: "Quanto tempo leva para o projeto ficar pronto?",
+    a: "O prazo varia de acordo com o escopo e a complexidade do projeto. Como trabalhamos com campanhas e lançamentos, todas as datas são alinhadas antes do início para que as entregas acompanhem o seu cronograma.",
+  },
+  {
+    q: "Posso contratar apenas um dos serviços?",
+    a: "Sim. Você pode contratar desde uma demanda específica, como uma landing page ou identidade visual, até toda a frente visual de um lançamento.",
+  },
+  {
+    q: "Vocês trabalham apenas com infoprodutores?",
+    a: "Somos especializados em negócios digitais e trabalhamos principalmente com experts, produtores e marcas. Projetos de outros segmentos também podem ser avaliados quando existir alinhamento com o nosso trabalho.",
+  },
+  {
     q: "Quanto custa um projeto?",
-    a: "Depende do escopo. [CONFIRMAR: divulgar faixa mínima ou não.] Você recebe o valor fechado por escrito antes de qualquer trabalho começar.",
+    a: "Cada projeto é único. Primeiro entendemos o que você precisa, os objetivos e o escopo da entrega. A partir disso, apresentamos uma proposta personalizada.",
   },
   {
-    q: "Quanto tempo leva?",
-    a: "Um projeto completo leva em média [CONFIRMAR: X semanas]. Depois da conversa inicial a gente confirma a data e ela entra no escopo por escrito.",
-  },
-  {
-    q: "Vocês trabalham com quem está começando do zero?",
-    a: "Depende do zero. Se você já tem produto e sabe para quem vende, sim. Se a oferta ainda não está definida, esse não é o momento certo para contratar design.",
-  },
-  {
-    q: "Vocês também cuidam do tráfego?",
-    a: "Não. A gente desenha marca, página e criativo. A mídia fica com o seu gestor, e entregamos as peças nos formatos que ele pedir.",
-  },
-  {
-    q: "Posso pedir ajuste depois da entrega?",
-    a: "Cada etapa tem [CONFIRMAR: número] rodadas de ajuste incluídas. Depois da entrega final, [CONFIRMAR: política de ajustes e suporte].",
-  },
-  {
-    q: "Em que plataforma o site é entregue?",
-    a: "[CONFIRMAR: plataforma]. Você recebe o acesso e o material para editar sozinho ou passar para outro dev.",
-  },
-  {
-    q: "Preciso ter identidade visual antes de fazer o site?",
-    a: "Não, mas ajuda. Quem chega sem marca definida começa pela identidade, e a página sai em cima dela na sequência.",
+    q: "Como faço para começar um projeto com a Off The Grid?",
+    a: "É só entrar em contato pelo WhatsApp. A gente conversa, entende o que você está construindo, suas necessidades e objetivos para definir o escopo e preparar uma proposta personalizada para o seu projeto.",
   },
 ];
 
@@ -44,7 +36,7 @@ export default function Faq() {
           <div className="xl:w-4/12">
             <Eyebrow icon={<span>(07)</span>}>Dúvidas</Eyebrow>
             <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              As perguntas que aparecem toda semana no WhatsApp
+              Antes de começarmos, talvez a sua dúvida esteja aqui.
             </h2>
           </div>
 

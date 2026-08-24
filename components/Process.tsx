@@ -3,26 +3,26 @@ import { Button, Eyebrow, Panel, Wrap } from "./ui/primitives";
 const ETAPAS = [
   {
     numero: "01",
-    titulo: "Conversa",
-    descricao: "Você chama no WhatsApp, conta o que vende e para quem. A gente diz se é um projeto para nós.",
+    titulo: "Briefing",
+    descricao: "Entendemos seu negócio, oferta, público, referências e os objetivos do projeto.",
     color: "#060E0F",
   },
   {
     numero: "02",
-    titulo: "Escopo por escrito",
-    descricao: "Você recebe escopo, prazo e valor fechado antes de qualquer trabalho começar.",
+    titulo: "Criação",
+    descricao: "Definimos conceito, direção visual e desenvolvemos as páginas, identidade e materiais previstos no projeto.",
     color: "#1E252C",
   },
   {
     numero: "03",
-    titulo: "Criação",
-    descricao: "O projeto chega em entregas parciais e você comenta em cima de cada uma.",
+    titulo: "Entrega",
+    descricao: "Apresentamos o projeto, refinamos os últimos detalhes e entregamos tudo organizado e pronto para ir ao ar.",
     color: "#363D43",
   },
   {
     numero: "04",
-    titulo: "Entrega",
-    descricao: "Arquivos abertos, manual de uso e uma call de passagem para a sua equipe.",
+    titulo: "Suporte",
+    descricao: "Prestamos suporte após a entrega para garantir que tudo seja implementado corretamente e que o seu lançamento aconteça conforme o planejado.",
     color: "#4C5357",
   },
 ] as const;
@@ -37,13 +37,12 @@ export default function Process() {
           </div>
 
           <h2 className="reveal text-3xl font-medium leading-tight tracking-[-0.04em] text-muted sm:text-4xl lg:text-5xl">
-            Quatro etapas. Você sabe onde o projeto está{" "}
-            <span className="text-ink">em cada uma.</span>
+            Quatro etapas. Um processo claro do início ao fim
           </h2>
 
           <p className="reveal mx-auto mt-6 max-w-lg text-lg text-muted">
-            Em cada etapa você sabe o que sai da nossa mão e quando, da primeira conversa à
-            entrega dos arquivos finais.
+            Do primeiro briefing à entrega final, cada etapa é pensada para manter o projeto claro,
+            ágil e alinhado com o que você está construindo.
           </p>
         </div>
 

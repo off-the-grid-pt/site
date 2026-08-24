@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import CursorRevealSection from "@/components/CursorRevealSection";
 import Challenges from "@/components/Challenges";
-import Philosophy from "@/components/Philosophy";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
@@ -29,7 +28,6 @@ export default function Home() {
         <Hero />
         <CursorRevealSection />
         <Challenges />
-        <Philosophy />
         <Services />
         <Process />
         <About />

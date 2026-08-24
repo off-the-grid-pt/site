@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import SoftBlurIn from "./ui/SoftBlurIn";
 
 const COPY =
-  "Design não é apenas aparência. É o sistema que transforma percepção em confiança, organiza cada ponto de contacto e faz uma marca ser reconhecida antes mesmo de ser explicada.";
+  "Grandes marcas não são reconhecidas apenas pelo que fazem, mas pela forma como fazem você perceber o valor delas.";
 
 export default function CursorRevealSection() {
   const sectionRef = useRef<HTMLElement>(null);

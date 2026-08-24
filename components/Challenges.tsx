@@ -59,9 +59,9 @@ const DESAFIOS = [
   },
   {
     n: "02",
-    titulo: "Landing pages que não convertem",
+    titulo: "Baixa percepção de autoridade",
     texto:
-      "Páginas mal estruturadas comprometem a experiência do usuário e desperdiçam oportunidades de conversão.",
+      "Quando a apresentação não acompanha a qualidade do conteúdo, conquistar a confiança do público se torna mais difícil.",
   },
   {
     n: "03",
@@ -71,9 +71,9 @@ const DESAFIOS = [
   },
   {
     n: "04",
-    titulo: "Baixa percepção de autoridade",
+    titulo: "Landing pages que não convertem",
     texto:
-      "Quando a apresentação não acompanha a qualidade do conteúdo, conquistar a confiança do público se torna mais difícil.",
+      "Páginas mal estruturadas comprometem a experiência do usuário e desperdiçam oportunidades de conversão.",
   },
   {
     n: "05",
@@ -99,23 +99,13 @@ export default function Challenges() {
 
         <div className="mb-16 grid gap-8 lg:grid-cols-[45%_55%] lg:gap-12">
           <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-[clamp(2.25rem,3.3vw,3rem)]">
-            <span className="block lg:whitespace-nowrap">O padrão do seu mercado</span>
-            <span className="block lg:whitespace-nowrap">não precisa ser o padrão</span>
-            <span className="block lg:whitespace-nowrap">da sua marca</span>
+            O digital ficou cheio de marcas diferentes com a mesma cara
           </h2>
 
-          <div className="reveal space-y-4 text-muted">
+          <div className="reveal text-muted">
             <p className="max-w-[52ch]">
-              Você paga o anúncio, o lead clica e cai numa página que ele já viu. Mesma estrutura,
-              mesma seção de bônus, mesma contagem regressiva.
-            </p>
-            <p className="max-w-[52ch]">
-              O logo veio de um freelancer. O criativo veio de outro. A página veio do que dava para
-              editar sozinho. Cada peça funciona isolada e nenhuma conversa com a outra.
-            </p>
-            <p className="max-w-[52ch]">
-              Quem paga essa conta é o seu custo por lead. Não porque o produto é ruim, mas porque
-              nada ali sustenta o preço que você está pedindo.
+              Mesmas referências. Mesmas páginas. Mesmos criativos. Quando sua marca se parece com
+              todas as outras, o problema vai muito além do design.
             </p>
           </div>
         </div>

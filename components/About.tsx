@@ -6,21 +6,20 @@ export default function About() {
       <Wrap>
         <div className="flex flex-col justify-between gap-10 lg:flex-row lg:gap-16">
           <div className="reveal lg:w-1/2">
-            <Eyebrow icon={<span>(06)</span>} className="!text-white">Quem somos</Eyebrow>
+            <Eyebrow icon={<span>(06)</span>} className="!text-white">Sobre a Off The Grid</Eyebrow>
             <h2 className="mb-4 text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              Duas pessoas, não uma lista de terceirizados.
+              Design para marcas que querem sair do comum
             </h2>
             <p className="mb-4 max-w-[520px] text-lg text-white/65">
-              A Off The Grid é [INSERIR: nome] e [INSERIR: nome da sócia]. Quem responde no WhatsApp
-              é quem desenha, e quem desenha é quem entrega.
+              A Off The Grid é um estúdio de design especializado em negócios digitais, criado por
+              Pedro Couto e Gabriele Severo. Desenvolvemos identidades, sites, landing pages,
+              criativos e materiais de campanha para experts, produtores e negócios que enxergam o
+              design como parte da forma como são percebidos no mercado.
             </p>
             <p className="mb-4 max-w-[520px] text-lg text-white/65">
-              [INSERIR: credencial real de cada um, nesta ordem: quem é e no que trabalha, uma
-              especialidade estreita, um número verdadeiro que já exista hoje, e o que isso significa
-              para quem contrata. Sem adjetivo de qualidade e sem número que ainda não aconteceu.]
-            </p>
-            <p className="max-w-[520px] text-lg text-white/65">
-              O nome diz o que a gente faz. Tirar a sua marca da malha padrão do seu nicho.
+              Queremos construir marcas que sejam reconhecidas, lembradas e, acima de tudo,
+              valorizadas. Por isso, cada decisão visual é pensada para elevar a percepção do
+              negócio e construir uma imagem à altura do que ele entrega.
             </p>
           </div>
 

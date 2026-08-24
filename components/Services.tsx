@@ -23,37 +23,37 @@ const SERVICOS: {
 }[] = [
   {
     n: "01",
-    titulo: "Sites e landing pages",
-    sub: "A página que segura o lead que o anúncio trouxe.",
-    itens: ["Página de vendas ou captura", "Texto e design juntos", "Mobile desenhado"],
-    viz: <MockSite />,
-  },
-  {
-    n: "02",
-    titulo: "Identidade visual",
-    sub: "Uma marca que continua a mesma no lançamento seguinte.",
-    itens: ["Logo e versões", "Paleta com códigos", "Tipografia", "Manual de uso"],
+    titulo: "Identidade Visual",
+    sub: "Uma direção visual própria para sua marca ser reconhecida em qualquer lugar que apareça.",
+    itens: ["Logotipo", "Tipografia", "Paleta de cores", "Brand Book"],
     viz: <MockBrand />,
   },
   {
+    n: "02",
+    titulo: "Sites & Landing Pages",
+    sub: "Design único e uma estrutura pensada para converter.",
+    itens: ["Personalizadas", "Responsivas", "Rápidas"],
+    viz: <MockSite />,
+  },
+  {
     n: "03",
-    titulo: "Criativos para tráfego pago",
-    sub: "O anúncio que já chega parecido com a página de destino.",
-    itens: ["Feed e stories", "Variações para teste", "Arquivos editáveis"],
+    titulo: "Criativos",
+    sub: "Criativos que unem impacto visual, clareza e consistência para destacar sua marca em cada campanha.",
+    itens: ["Facebook & Instagram Ads", "Google Ads", "Otimizados para performance"],
     viz: <MockAds />,
   },
   {
     n: "04",
-    titulo: "Apresentações e materiais de lançamento",
-    sub: "A campanha inteira com a mesma cara, até o último slide.",
-    itens: ["Slides de aula e webinário", "Capas e thumbnails", "Cabeçalhos de e-mail"],
+    titulo: "Materiais de Lançamento",
+    sub: "Tudo o que a campanha precisa para manter a mesma identidade do primeiro contato até a entrega.",
+    itens: ["Apresentações", "Materiais de apoio", "E-books"],
     viz: <MockSlides />,
   },
   {
     n: "05",
     titulo: "Entrega editável na sua mão",
-    sub: "O projeto continua funcionando depois que a gente sai.",
-    itens: ["Arquivos abertos", "Manual de uso", "Call de passagem"],
+    sub: "Tudo o que criamos é entregue de forma organizada e editável, preparado para acompanhar os próximos passos da sua marca.",
+    itens: ["Arquivos abertos", "Manual de aplicação", "Templates reutilizáveis"],
     viz: <MockDelivery />,
   },
 ];
@@ -131,8 +131,8 @@ export default function Services() {
             </h2>
 
             <p className="mt-4 max-w-lg text-lg text-muted">
-              Cinco frentes que podem vir juntas ou separadas, na ordem que o seu momento pede. O que
-              não muda é que tudo sai com a mesma cara.
+              Da identidade à página de vendas, criamos cada peça sob a mesma direção para que o seu
+              lançamento tenha uma identidade própria do início ao fim.
             </p>
 
             <a
