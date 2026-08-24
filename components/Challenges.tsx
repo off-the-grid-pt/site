@@ -98,7 +98,7 @@ export default function Challenges() {
         </div>
 
         <div className="mb-16 grid gap-8 lg:grid-cols-[45%_55%] lg:gap-12">
-          <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-[clamp(2.25rem,3.3vw,3rem)]">
+          <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
             O digital ficou cheio de marcas diferentes com a mesma cara
           </h2>
 

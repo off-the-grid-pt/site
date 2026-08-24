@@ -118,16 +118,16 @@ export default function Services() {
           {/* coluna fixa */}
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <div className="mb-4 flex items-center gap-3">
-              <span className="font-mono text-sm text-muted">(04)</span>
+              <span className="font-mono text-sm text-muted">(03)</span>
               <span className="font-mono text-sm uppercase tracking-[0.02em] text-ink">
                 O que entregamos
               </span>
               <span className="h-px flex-1 bg-line" aria-hidden="true" />
             </div>
 
-            <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-[clamp(2rem,3vw,2.5rem)]">
-              <span className="block lg:whitespace-nowrap">Tudo o que o seu lançamento</span>
-              <span className="block lg:whitespace-nowrap">precisa, saindo do mesmo lugar.</span>
+            <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
+              <span className="block">Tudo o que o seu lançamento</span>
+              <span className="block">precisa, saindo do mesmo lugar.</span>
             </h2>
 
             <p className="mt-4 max-w-lg text-lg text-muted">

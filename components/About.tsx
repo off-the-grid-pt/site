@@ -6,7 +6,7 @@ export default function About() {
       <Wrap>
         <div className="flex flex-col justify-between gap-10 lg:flex-row lg:gap-16">
           <div className="reveal lg:w-1/2">
-            <Eyebrow icon={<span>(06)</span>} className="!text-white">Sobre a Off The Grid</Eyebrow>
+            <Eyebrow icon={<span>(05)</span>} className="!text-white">Sobre a Off The Grid</Eyebrow>
             <h2 className="mb-4 text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
               Design para marcas que querem sair do comum
             </h2>

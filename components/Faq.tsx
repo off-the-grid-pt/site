@@ -32,15 +32,17 @@ export default function Faq() {
   return (
     <Panel id="duvidas" className="px-3 py-12 pb-8 lg:py-25">
       <Wrap>
-        <div className="flex flex-col justify-between gap-10 lg:flex-row xl:gap-16">
-          <div className="xl:w-4/12">
-            <Eyebrow icon={<span>(07)</span>}>Dúvidas</Eyebrow>
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <div>
+            <Eyebrow icon={<span>(06)</span>}>Dúvidas</Eyebrow>
             <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              Antes de começarmos, talvez a sua dúvida esteja aqui.
+              <span className="lg:block">Antes de começarmos,</span>{" "}
+              <span className="lg:block">talvez a sua dúvida</span>{" "}
+              <span className="lg:block">esteja aqui.</span>
             </h2>
           </div>
 
-          <div className="xl:w-7/12">
+          <div>
             <div className="divide-y divide-line">
               {PERGUNTAS.map((p, i) => {
                 const open = aberta === i;

@@ -186,9 +186,9 @@ export default function Footer() {
         </div>
 
         {/* ---- chamada final ---- */}
-        <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-4 py-12 text-center sm:px-7">
+        <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center px-4 py-12 text-center sm:px-7">
           <h2
-            className="footer-rise mb-9 text-3xl font-medium leading-[1.05] tracking-[-0.03em] text-white sm:text-4xl lg:text-5xl"
+            className="footer-rise mb-9 text-4xl font-medium leading-[1.02] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl xl:text-7xl"
             style={{ "--atraso": 0.35 } as React.CSSProperties}
           >
             <span className="block sm:whitespace-nowrap">O próximo lançamento não precisa</span>

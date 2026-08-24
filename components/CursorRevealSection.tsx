@@ -35,7 +35,7 @@ export default function CursorRevealSection() {
     <section ref={sectionRef} className="cursor-reveal-section min-h-svh bg-black px-5 py-28 sm:px-8 lg:px-12">
       <SoftBlurIn
         text={COPY}
-        className="cursor-reveal-copy mx-auto max-w-[1800px] text-justify text-[clamp(1.8rem,4vw,5rem)] font-medium leading-[1.08] tracking-[-0.055em]"
+        className="cursor-reveal-copy mx-auto max-w-[1800px] text-justify text-[clamp(2.1rem,4.8vw,6rem)] font-medium leading-[1.06] tracking-[-0.055em]"
       />
     </section>
   );
