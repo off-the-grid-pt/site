@@ -37,7 +37,7 @@ export default function Nav() {
           </nav>
 
           <Link href="#contato" className="site-header-cta">
-            <span>Contato</span>
+            <span>Entre em contato</span>
             <i><Arrow /></i>
           </Link>
 
@@ -82,7 +82,7 @@ export default function Nav() {
               </Link>
             ))}
             <Link href="#contato" onClick={() => setOpen(false)} className="site-mobile-cta">
-              Chamar no WhatsApp <Arrow />
+              Entre em contato <Arrow />
             </Link>
           </nav>
         )}

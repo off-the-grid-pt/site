@@ -77,7 +77,7 @@ export default function Process() {
 
         <div className="mt-16 flex justify-center">
           <Button href="#contato" withArrow>
-            Começar agora
+            Solicitar um orçamento
           </Button>
         </div>
       </Wrap>

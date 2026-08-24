@@ -96,7 +96,7 @@ export default function Hero() {
               className="hero-entry-item hero-cta pointer-events-auto mt-8"
               style={{ "--entry-delay": "240ms" } as React.CSSProperties}
             >
-              Começar um projeto
+              Solicitar um orçamento
               <span aria-hidden="true">↗</span>
             </a>
           </div>
