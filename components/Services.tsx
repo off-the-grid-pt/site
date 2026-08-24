@@ -138,7 +138,7 @@ export default function Services() {
 
             <a
               href={href(WHATSAPP_URL, "#duvidas")}
-              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-ink-btn px-6 py-[14px] font-mono text-sm uppercase leading-none tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-hover"
+              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-ink-btn px-6 py-[14px] font-mono text-xs font-[650] uppercase leading-none tracking-[0.04em] text-white transition-colors duration-300 hover:bg-ink-hover"
             >
               Solicitar um orçamento
               <Arrow />

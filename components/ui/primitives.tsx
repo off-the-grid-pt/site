@@ -107,7 +107,7 @@ export function Button({
   className = "",
 }: ButtonProps) {
   const base =
-    "group inline-flex items-center gap-2 rounded-[16px] border font-mono text-sm uppercase leading-none tracking-[0.04em] transition-colors duration-300";
+    "group inline-flex items-center gap-2 rounded-[16px] border font-mono text-xs font-[650] uppercase leading-none tracking-[0.04em] transition-colors duration-300";
   const sizes = size === "sm" ? "px-[18px] py-3" : "px-5 py-[14px]";
   const variants =
     variant === "primary"

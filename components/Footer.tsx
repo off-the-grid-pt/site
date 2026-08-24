@@ -202,7 +202,7 @@ export default function Footer() {
             <Magnetico>
               <a
                 href={href(WHATSAPP_URL, "#duvidas")}
-                className="footer-pill footer-pill--whatsapp group inline-flex items-center gap-2 rounded-full px-9 py-4 font-mono text-sm uppercase leading-none tracking-[0.04em]"
+                className="footer-pill footer-pill--whatsapp group inline-flex items-center gap-2 rounded-full px-9 py-4 font-mono text-xs font-[650] uppercase leading-none tracking-[0.04em]"
               >
                 Solicitar um orçamento
                 <Arrow />
@@ -212,7 +212,7 @@ export default function Footer() {
             <Magnetico>
               <Link
                 href="#entregamos"
-                className="footer-pill inline-flex items-center rounded-full px-9 py-4 font-mono text-sm uppercase leading-none tracking-[0.04em] text-neutral-300"
+                className="footer-pill inline-flex items-center rounded-full px-9 py-4 font-mono text-xs font-[650] uppercase leading-none tracking-[0.04em] text-neutral-300"
               >
                 Ver portfólio
               </Link>
