@@ -30,7 +30,7 @@ export default function Faq() {
   const [aberta, setAberta] = useState<number | null>(null);
 
   return (
-    <Panel id="duvidas" className="px-3 py-8 lg:py-16">
+    <Panel id="duvidas" className="flex items-center px-3 py-12 lg:py-16">
       <Wrap>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div>
@@ -54,7 +54,7 @@ export default function Faq() {
                         onClick={() => setAberta(open ? null : i)}
                         aria-expanded={open}
                         aria-controls={`faq-painel-${i}`}
-                        className="flex w-full cursor-pointer items-center gap-4 py-4 text-left"
+                        className="flex w-full cursor-pointer items-center gap-4 py-5 text-left"
                       >
                         <span
                           className={`flex size-7 shrink-0 items-center justify-center rounded-[8px] transition-colors duration-200 ${
@@ -83,7 +83,7 @@ export default function Faq() {
                     <div
                       id={`faq-painel-${i}`}
                       hidden={!open}
-                      className="max-w-xl pb-4 pl-11 text-base leading-relaxed text-muted"
+                      className="max-w-xl pb-5 pl-11 text-base leading-relaxed text-muted"
                     >
                       {p.a}
                     </div>
