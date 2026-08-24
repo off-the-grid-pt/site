@@ -126,8 +126,9 @@ export default function Services() {
             </div>
 
             <h2 className="text-3xl font-medium leading-tight tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              <span className="block">Tudo o que o seu lançamento</span>
-              <span className="block">precisa, saindo do mesmo lugar.</span>
+              <span className="block">Tudo o que o seu</span>
+              <span className="block">lançamento precisa,</span>
+              <span className="block">saindo do mesmo lugar.</span>
             </h2>
 
             <p className="mt-4 max-w-lg text-lg text-muted">

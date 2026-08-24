@@ -27,7 +27,7 @@ const PERGUNTAS = [
 ];
 
 export default function Faq() {
-  const [aberta, setAberta] = useState<number | null>(0);
+  const [aberta, setAberta] = useState<number | null>(null);
 
   return (
     <Panel id="duvidas" className="px-3 py-12 pb-8 lg:py-25">
